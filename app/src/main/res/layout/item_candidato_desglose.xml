@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/img_foto"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_bg" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+            <TextView
+                android:id="@+id/tv_partido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PERUANOS POR EL KAMBIO"
+                android:textColor="@color/gold"
+                android:textSize="9sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+            <TextView
+                android:id="@+id/tv_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pedro Pablo Kuczynski"
+                android:textColor="@color/navy_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="end">
+            <TextView
+                android:id="@+id/tv_porcentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50.120%"
+                android:textColor="@color/navy_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_votos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8,596,937 votos"
+                android:textColor="@color/grey_text"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_border" />
+
+</LinearLayout>

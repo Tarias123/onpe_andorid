@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "58554227085",
+    "project_id": "onpe-firebase-79a9a",
+    "storage_bucket": "onpe-firebase-79a9a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58554227085:android:23397eea9e3d3e544885c4",
+        "android_client_info": {
+          "package_name": "com.onpe.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHqpSpWFA12TBovmmOmrbG9pI0gs54WV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58554227085:android:dedd1de1e634a3a14885c4",
+        "android_client_info": {
+          "package_name": "com.onpe.onpe_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHqpSpWFA12TBovmmOmrbG9pI0gs54WV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

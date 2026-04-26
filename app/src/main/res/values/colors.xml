@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy_dark">#1A2744</color>
+    <color name="navy_med">#243560</color>
+    <color name="gold">#E8A020</color>
+    <color name="gold_light">#F5C842</color>
+    <color name="gold_bg">#FFF8E1</color>
+    <color name="background">#F0F2F5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="grey_text">#9E9E9E</color>
+    <color name="grey_light">#F5F5F5</color>
+    <color name="grey_border">#E0E0E0</color>
+    <color name="green_ok">#4CAF50</color>
+    <color name="green_bg">#E8F5E9</color>
+</resources>

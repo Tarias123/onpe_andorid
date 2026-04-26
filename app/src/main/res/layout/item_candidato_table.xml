@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_marginTop="2dp">
+
+    <TextView
+        android:id="@+id/tv_nombre_table"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Pedro Pablo Kuczynski"
+        android:textColor="@color/navy_dark"
+        android:textSize="11sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_pct_validos_table"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="50.120%"
+        android:textColor="@color/navy_dark"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_pct_emitidos_table"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="46.868%"
+        android:textColor="@color/grey_text"
+        android:textSize="11sp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_votos_table"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="8,596,937"
+        android:textColor="@color/grey_text"
+        android:textSize="10sp"
+        android:gravity="end" />
+
+</LinearLayout>

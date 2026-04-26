@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toggle Perú / Extranjero -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="3dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+                <Button
+                    android:id="@+id/btn_peru"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:text="PERÚ"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/navy_dark"
+                    android:textColor="@color/white"
+                    style="?attr/materialButtonStyle" />
+                <Button
+                    android:id="@+id/btn_extranjero"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_weight="1"
+                    android:text="EXTRANJERO"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColor="@color/grey_text"
+                    style="?attr/materialButtonStyle" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card Estado -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            app:cardBackgroundColor="@color/gold_bg"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ESTADO ACTUAL"
+                    android:textColor="#7A5000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="100% Procesados"
+                        android:textColor="@color/navy_dark"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:text="✓"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        android:background="@color/navy_dark" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="6dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Actas contabilizadas"
+                        android:textColor="#5A3A00"
+                        android:textSize="11sp" />
+                    <TextView
+                        android:id="@+id/tv_actas_estado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="77,307 / 77,307"
+                        android:textColor="#5A3A00"
+                        android:textSize="11sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <ProgressBar
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="8dp"
+                    android:progress="100"
+                    android:max="100"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:progressTint="@color/navy_dark"
+                    android:progressBackgroundTint="@color/gold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="ULTIMA ACTUALIZACIÓN: 20/06/2016 – 19:16:00"
+                    android:textColor="#7A5000"
+                    android:textSize="9sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card Participación -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PARTICIPACIÓN CIUDADANA"
+                    android:textColor="@color/grey_text"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1" />
+                <TextView
+                    android:id="@+id/tv_porcentaje_final"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80.093%"
+                    android:textColor="@color/navy_dark"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VOTANTES ELEGIBLES"
+                            android:textColor="@color/grey_text"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_electores"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="22,901,954"
+                            android:textColor="@color/navy_dark"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="end">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="CIUDADANOS QUE VOTARON"
+                            android:textColor="@color/grey_text"
+                            android:textSize="9sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv_participantes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18,342,896"
+                            android:textColor="@color/navy_dark"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card Desglose candidaturas -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desglose de candidaturas"
+                    android:textColor="@color/navy_dark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_candidatos_desglose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:nestedScrollingEnabled="false" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_border"
+                    android:layout_marginTop="12dp" />
+                <TextView
+                    android:id="@+id/tv_view_full_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="VIEW FULL TABLE ›"
+                    android:textColor="@color/navy_dark"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Card Progreso -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="3dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detalle del progreso del escrutinio"
+                    android:textColor="@color/navy_dark"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="12dp">
+                    <include layout="@layout/item_progreso" android:id="@+id/prog_total" />
+                    <include layout="@layout/item_progreso" android:id="@+id/prog_procesadas" />
+                    <include layout="@layout/item_progreso" android:id="@+id/prog_contabilizadas" />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

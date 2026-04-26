@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_presidencial"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Presidencial" />
+    <item
+        android:id="@+id/nav_actas"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Actas" />
+    <item
+        android:id="@+id/nav_participacion"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="Participacion" />
+</menu>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Handle -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@color/grey_border" />
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tabla de Resultados"
+                android:textColor="@color/navy_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segunda Elección Presidencial 2016 – Resultados Oficiales ONPE"
+                android:textColor="@color/grey_text"
+                android:textSize="11sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/btn_close_sheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✕"
+            android:textSize="18sp"
+            android:textColor="@color/grey_text"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/grey_border" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Sección candidatos -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="RESULTADOS POR CANDIDATO"
+                android:textColor="@color/grey_text" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.08" />
+
+            <!-- Header tabla -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:background="@color/navy_dark" android:padding="12dp"
+                android:orientation="horizontal" android:layout_marginTop="10dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="3"
+                    android:text="Candidato" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="% Válidos" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold" android:gravity="center" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="% Emitidos" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold" android:gravity="center" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="Votos" android:textColor="@color/white" android:textSize="10sp" android:textStyle="bold" android:gravity="end" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_candidatos_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Resumen votos -->
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="RESUMEN DE VOTOS"
+                android:textColor="@color/grey_text" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.08" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@color/grey_light"
+                android:layout_marginTop="10dp" android:padding="4dp">
+                <include layout="@layout/item_stat_row" android:id="@+id/row_electores" />
+                <include layout="@layout/item_stat_row" android:id="@+id/row_particip" />
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="TIPO DE VOTO"
+                android:textColor="@color/grey_text" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.08" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@color/grey_light"
+                android:layout_marginTop="10dp" android:padding="4dp">
+                <include layout="@layout/item_stat_row" android:id="@+id/row_validos" />
+                <include layout="@layout/item_stat_row" android:id="@+id/row_blancos" />
+                <include layout="@layout/item_stat_row" android:id="@+id/row_nulos" />
+                <include layout="@layout/item_stat_row" android:id="@+id/row_emitidos" />
+            </LinearLayout>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="ESTADO DE ACTAS"
+                android:textColor="@color/grey_text" android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.08" />
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:background="@color/grey_light"
+                android:layout_marginTop="10dp" android:padding="4dp">
+                <include layout="@layout/item_stat_row" android:id="@+id/row_total_actas" />
+                <include layout="@layout/item_stat_row" android:id="@+id/row_procesadas" />
+                <include layout="@layout/item_stat_row" android:id="@+id/row_contabilizadas" />
+            </LinearLayout>
+
+            <!-- IDs para poblar desde código -->
+            <TextView android:id="@+id/tv_stat_electores"   android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_particip"    android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_pct_particip" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_validos"     android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_blancos"     android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_nulos"       android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_emitidos"    android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_total_actas" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_procesadas"  android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+            <TextView android:id="@+id/tv_stat_contabilizadas" android:layout_width="0dp" android:layout_height="0dp" android:visibility="gone" />
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fuente: ONPE – web.onpe.gob.pe | Actualizado: 20/06/2016 a las 19:16 h"
+                android:textColor="@color/grey_text" android:textSize="10sp" android:gravity="center" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

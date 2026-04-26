@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_candidato_pres"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:padding="14dp"
+    android:layout_marginBottom="12dp"
+    android:gravity="center_vertical">
+
+    <View
+        android:id="@+id/border_left"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/gold"
+        android:layout_marginEnd="12dp" />
+
+    <ImageView
+        android:id="@+id/img_foto_pres"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_bg" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+        <TextView
+            android:id="@+id/tv_partido_pres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PARTIDO"
+            android:textColor="@color/gold"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05" />
+        <TextView
+            android:id="@+id/tv_nombre_pres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Candidato"
+            android:textColor="@color/navy_dark"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_votos_pres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8,596,937 votos"
+            android:textColor="@color/grey_text"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_pct_pres_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50.120%"
+        android:textColor="@color/navy_dark"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
